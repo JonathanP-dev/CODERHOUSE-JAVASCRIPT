@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #222;
+  text-align: center;
+}
+
+h1 {
+  color: #dbdbdb;
+}
