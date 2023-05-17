@@ -12,3 +12,83 @@ html {
 h1 {
   color: #dbdbdb;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+header {
+  width: 60%;
+  padding: 1rem;
+}
+
+header form {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+header input {
+  width: 100%;
+  padding: .5rem 1rem;
+  outline: none;
+}
+
+header button {
+
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid black;
+  padding: .5rem 1rem;
+  background-color: rgba(0, 60, 255, 0.781);
+  color: white;
+  opacity: .8;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 1;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.movies-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.movie-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.movie-card img {
+  width: 100%;
+
+}
+
+.movie-card strong {
+  align-self: center;
+  padding-bottom: 1rem;
+}
