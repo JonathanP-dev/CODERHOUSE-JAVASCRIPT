@@ -33,6 +33,19 @@ const movies = [
   }
 ]
 
+// funcion para listar las peliculas que se encuentran disponibles.
+const moviesList = ( moviesArray ) => {
+  let mensaje = 'Peliculas guardadas: ';
+
+  for ( let i = 0; i < moviesArray.length; i++ ) {
+    if ( i == ( moviesArray.length - 1 ) ) {
+      mensaje = mensaje + `${moviesArray[i].title}.`;
+      break
+    }
+    mensaje = mensaje + `${moviesArray[i].title}, `;
+  }
+  alert( mensaje )
+}
 // funcion para obtener la pelicula que el usuario quiere ver
 // la idea es simular que el usuario escribe en el formulario y presiona el boton de buscar 
 // puede que le agregue un debounce al input (????)
@@ -44,9 +57,8 @@ El programa cuenta con un arreglo de peliculas (una base de datos).
 En el siguiente prompt tu vas a poder ingresar el nombre de una pelicula.
 Si la misma se encuentra en el arreglo te va a devolver por alert los datos de la misma.
 Si no la encuentra te devolvera "pelicula no encontrada"
-
-peliculas: iron man 1, iron man 2, capitan america, hulk, thor, avengers 1
   `)
+  moviesList( movies );
   movie = prompt( 'Ingrese el nombre de la pelicula a buscar: ' )
 
   // chequeamos que no haya dejado el prompt vacio

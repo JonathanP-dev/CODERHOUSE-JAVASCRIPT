@@ -81,6 +81,12 @@ header button:hover {
   border-radius: 10px;
   background-color: white;
   overflow: hidden;
+  cursor: pointer;
+  opacity: .85;
+}
+
+.movie-card:hover {
+  opacity: 1;
 }
 
 .movie-card img {
